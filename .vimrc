@@ -12,7 +12,7 @@ Plugin 'tpope/vim-fugitive'
 ""filesystem
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kien/ctrlp.vim' 
+Plugin 'ctrlpvim/ctrlp.vim'
 autocmd VimEnter * NERDTree
 autocmd BufEnter * NERDTreeMirror
 autocmd VimEnter * wincmd w
@@ -24,6 +24,7 @@ Plugin 'nvie/vim-flake8'
 "flake8 - check PEP8 each write
 autocmd BufWritePost *.py call Flake8()
 Plugin 'vim-scripts/Pydiction'
+let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 "auto-completion stuff
