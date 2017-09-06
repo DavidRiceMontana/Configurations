@@ -15,11 +15,20 @@ Configurations for vim to share amongst machines
         
 
 ### Installed Plugin Sparknotes (Description and common commands)
+###### VundleVim/Vundle - Pip for Vim. Makes installing packages easy
+- :PluginInstall
+- :PluginList
 ###### tpope/vim-fugitive - Git wrapper for Vim
 - :Git (any normal Git command that comes after the word *git*)
 - The % symbol means this file
     - :Git commit %
-
-###### kien/ctrlp - Search for files
+###### scrooloose/nerdtree - File tree and directory navigation
+###### jistr/vim-nerdtree-tabs - Nerdtree stays open and the same across tabs
+###### ctrlpvim//ctrlp - Search for files
 - Enter *ctrl+p* to enter file search mode
+- Refresh cache with <F5>
 - search parent directories with *..*
+###### nvie/vim-flake8 - python PEP8 style enforcer
+- Press <F7> to run flake8 on the currently open file
+###### vim-scripts/Pydiction - Tab complete Python code
+- Press <tab> while typing a keyword, built-in, standard library, or third-party modules
