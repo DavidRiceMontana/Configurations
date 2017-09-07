@@ -40,17 +40,17 @@ Configurations for vim to share amongst machines
 - Requires the language-specific syntax checker also be installed (e.g. vim-flake8 for python checking)
 - Put cursor on line with a syntax error to see the error message
 - This is a complicated plugin. Read through *:help syntastic*
-###### keln/python-mode - Static analysis, syntax highlighting, refactoring, folding, completion, documentation, and more: all you need to develop python applications in Vim.
+###### python-mode/python-mode - Static analysis, syntax highlighting, refactoring, folding, completion, documentation, and more: all you need to develop python applications in Vim.
 - No need to install pylint, rope or any other Python Libraries on your system with this plugin
 - Vim motion for python objects (C means class, M means method or function):
-    - <[[> - Jump to previous class or function (normal, visual, operator modes)
-    - <[[> - Jump to next class or function (normal, visual, operator modes)
-    - <[M> - Jump to previous class or method
-    - <]M> - Jump to next class or method
-    - <aC> - Select a class. (Ex: vaC, daC, yaC, ciC)
-    - <iC> - Select inner class. (Ex: viC, diC, yiC, ciC)
-    - <aM> - Select a function or method. (Ex: vaM, daM, yaM, caM)
-    - <iM> - Select inner function or method. (Ex: viM, diM, yiM, ciM)
+    - `[[` - Jump to previous class or function (normal, visual, operator modes)
+    - `[[` - Jump to next class or function (normal, visual, operator modes)
+    - `[M` - Jump to previous class or method
+    - `]M` - Jump to next class or method
+    - `aC` - Select a class. (Ex: vaC, daC, yaC, ciC)
+    - `iC` - Select inner class. (Ex: viC, diC, yiC, ciC)
+    - `aM` - Select a function or method. (Ex: vaM, daM, yaM, caM)
+    - `iM` - Select inner function or method. (Ex: viM, diM, yiM, ciM)
 ###### Valloric/YouCompleteMe - Python autocomplete
 - Needs various development tools:
     - `sudo apt-get install build-essential cmake`
