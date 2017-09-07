@@ -4,17 +4,20 @@ Configurations for vim to share amongst machines
 ### Additional Dependencies
 1. vim installed with Python3 support: vim-nox
 2. Vundle extension manager to make installing the other plugins easy
-    - git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-    - touch ~/.vimrc
+    - `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+    - `touch ~/.vimrc`
     - (make sure to then run :PluginInstall in Vim)
 4. Python3 basics needed
     - `sudo apt install python3-pip`
     - `pip3 install -U pip setuptools`
 3. Lokaltog/powerline plugin
-    - pip3 install --user powerline-status
+    - `pip3 install --user powerline-status`
 4. python-rope/ropevim 
     - Needs the *Rope* library installed first:
         - `sudo pip3 install Rope`
+5. nvie/vim-flake8
+    - Needs flake8 instealled through python
+        - `sudo pip3 install flake8`
        
 ### Installed Plugin Sparknotes (Description and common commands)
 ###### VundleVim/Vundle - Pip for Vim. Makes installing packages easy
