@@ -5,7 +5,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" --- Plugins ---
+" --- Plugins --- "
 Plugin 'VundleVim/Vundle.vim'
 "git interface
 Plugin 'tpope/vim-fugitive'
@@ -43,9 +43,13 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 call vundle#end()
 
-" ---  'Default Settings' ---
+" ---  'Default Settings' --- "
 "default to case-insensitive search. For case sensitive use \C
 set ignorecase
+"access system clipboard
+set clipboard=unnammed
+"Turn on vim mode in the shell
+set editing-mode vi
 
 " enables filetype detection
 filetype plugin on
