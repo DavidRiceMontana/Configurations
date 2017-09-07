@@ -28,11 +28,11 @@ let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 "auto-completion stuff
-Plugin 'klen/python-mode'
+Plugin 'python-mode/python-mode'
+let g:pymode_python = 'python3'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'klen/rope-vim'
+Plugin 'python-rope/ropevim'
 "Plugin 'davidhalter/jedi-vim'
-Plugin 'ervandew/supertab'
 "code folding
 Plugin 'tmhedberg/SimpylFold'
 "colors!!!
