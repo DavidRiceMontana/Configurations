@@ -9,6 +9,7 @@
 .config/
 .dbus/
 .dmrc
+.gitconfig
 .local/
 .mozilla/
 .profile
