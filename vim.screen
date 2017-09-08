@@ -1,0 +1,19 @@
+#
+# Initiate a screen session with a nice 
+# customized development environment set up
+#
+# Run this file from console with `screen -c ~/vim.screen`
+# (this runs the screen application from the arg config file instead of .screenrc)
+#
+
+source ~/.screenrc
+
+screen -t dev 0
+split
+resize 45
+focus down
+screen -t test
+split -v
+focus right
+screen -t console
+focus up
