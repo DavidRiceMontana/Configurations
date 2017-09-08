@@ -77,9 +77,10 @@ Configurations for vim to share amongst machines
 - `screen -dRR` - Smart attach (Attaches to a screen session. If the session is attached elsewhere, detaches that other display. If no session exists, creates one. If multiple sessions exist, uses the first one.)
 - `^a S`\`^a V` - Split display horizontally\vertically
     - Then enter `^a c` to start a new screen instance with shell open
-- `^a :resize < *a number between 1 (one line of visibility) - 60 (60 lines of visibility) * >` - Resize the screen, very useful for customizing split layouts
+- `^a :resize <a number between 1 (one line of visibility) to 60 (60 lines of visibility)>` - Resize the screen, very useful for customizing split layouts
     - `^a :resize -h -10` - Resize horizontally 10 lines less in size
     - `^a :resize -v 50%` - Resize vertically 50% less in size
 - `^a tab` - Jump to next display region
 - `^a X` - Remove current region 
-- `^a Q` - Remove all regions but currnent
+- `^a Q` - Remove all regions but current
+- (screen is a large and useful application with a lot more commands. read up on to how to use it)
