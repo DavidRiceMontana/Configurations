@@ -1,6 +1,4 @@
 .DS_Store
-.ICEauthority
-.Xauthority
 .bash_history
 .bash_logout
 .cache/
@@ -9,6 +7,9 @@
 .dbus/
 .dmrc
 .gitconfig
+.ICEauthority
+.lesshst
+.linuxmint/
 .local/
 .mozilla/
 .profile
@@ -20,5 +21,7 @@
 .vboxclient-seamless.pid
 .vim/
 .viminfo
+.Xauthority
 .xsession-errors
+.xsession-errors.old
 Documents/
