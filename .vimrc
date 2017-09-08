@@ -10,11 +10,10 @@ Plugin 'VundleVim/Vundle.vim'
 "git interface
 Plugin 'tpope/vim-fugitive'
 ""filesystem
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
+"Plugin 'scrooloose/nerdtree'
+"autocmd VimEnter * NERDTree
+"file search
 Plugin 'ctrlpvim/ctrlp.vim'
-autocmd VimEnter * NERDTree
-autocmd BufEnter * NERDTreeMirror
 autocmd VimEnter * wincmd w
 "html
 "  isnowfy only compatible with python not python3
@@ -48,8 +47,6 @@ call vundle#end()
 set ignorecase
 "access system clipboard
 set clipboard=unnammed
-"Turn on vim mode in the shell
-set editing-mode vi
 
 " enables filetype detection
 filetype plugin on
