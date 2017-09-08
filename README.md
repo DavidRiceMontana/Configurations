@@ -7,6 +7,8 @@ Configurations for vim to share amongst machines
     - `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
     - `touch ~/.vimrc`
     - (make sure to then run :PluginInstall in Vim)
+3. Screen (Not essential, but I list shortcuts for it below and like using it. Note that Screen is not a vim plugin)
+    - `sudo apt install screen`
 4. Python3 basics needed
     - `sudo apt install python3-pip`
     - `pip3 install -U pip setuptools`
@@ -67,3 +69,14 @@ Configurations for vim to share amongst machines
     - `sudo pip3 install Rope`
 ###### tmhedberg/SimpylFold - More accurate Python code folding
 ###### Lokaltog/powerline - Status bar that displays things like the current virtualenv, git branch, files being edited, and much more.
+###### Screen (not a vim plugin) - Split or window multiple shells using tmux
+- `screen -S <name>` - New screen session with provided session name
+- `screen -ls` - List running sessions and names
+- `screen -x` - Attach to running session
+- `screen -r <name>` - Attach to session name
+- `screen -dRR` - Smart attach (Attaches to a screen session. If the session is attached elsewhere, detaches that other display. If no session exists, creates one. If multiple sessions exist, uses the first one.)
+- `^a S`\`^a V` - Split display horizontally\vertically
+    - Then enter `^a c` to start a new screen instance with shell open
+- `^a tab` - Jump to next display region
+- `^a X` - Remove current region 
+- `^a Q` - Remove all regions but currnent
