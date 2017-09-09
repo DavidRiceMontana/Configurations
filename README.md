@@ -20,6 +20,8 @@ Configurations for vim to share amongst machines
 5. nvie/vim-flake8
     - Needs flake8 instealled through python
         - `sudo pip3 install flake8`
+6. google/yapf
+    - `sudo pip3 install yapf
        
 ### Installed Plugin Sparknotes (Description and common commands)
 ###### VundleVim/Vundle - Pip for Vim. Makes installing packages easy
@@ -69,6 +71,8 @@ Configurations for vim to share amongst machines
     - `sudo pip3 install Rope`
 ###### tmhedberg/SimpylFold - More accurate Python code folding
 ###### Lokaltog/powerline - Status bar that displays things like the current virtualenv, git branch, files being edited, and much more.
+###### google/yapf - Auto-formatting for python to fit to PEP8 standards (not a vim plugin)
+- Run from outside of vim with `yapf -i <filename.py>`
 ###### Screen (not a vim plugin) - Split or window multiple shells using tmux
 - `screen -S <name>` - New screen session with provided session name
 - `screen -ls` - List running sessions and names
