@@ -12,15 +12,21 @@ Configurations for vim to share amongst machines
 4. Python3 basics needed
     - `sudo apt install python3-pip`
     - `sudo pip3 install -U pip setuptools`
-3. Lokaltog/powerline plugin
+5. YouCompleteMe dependencies:
+    - `sudo apt-get install build-essential cmake`
+    - `sudo apt-get install python-dev python3-dev`
+    - `cd ~/.vim/bundle/YouCompleteMe`
+        - `./install.py --clang-completer`
+    - (look up the github for Valloric/YouCompleteMe for support for additional languages)
+6. Lokaltog/powerline plugin
     - `pip3 install --user powerline-status`
-4. python-rope/ropevim 
+7. python-rope/ropevim 
     - Needs the *Rope* library installed first:
         - `sudo pip3 install Rope`
-5. nvie/vim-flake8
+8. nvie/vim-flake8
     - Needs flake8 instealled through python
         - `sudo pip3 install flake8`
-6. google/yapf
+9. google/yapf
     - `sudo pip3 install yapf
        
 ### Installed Plugin Sparknotes (Description and common commands)
