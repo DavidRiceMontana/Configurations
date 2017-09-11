@@ -36,6 +36,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
+export TERM="xterm-256color"
 case "$TERM" in
     xterm|xterm-color|*-256color) color_prompt=yes;;
 esac
@@ -126,3 +127,6 @@ fi
 if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
+
+# have bash execute the screen application on start
+[[ $TERM != "screen" ]] && exec screen -q 

@@ -20,10 +20,31 @@ let g:syntastic_check_on_wq = 0
 " completion, documentation, and more.
 Plugin 'python-mode/python-mode'
 let g:pymode_python = 'python3'
+" shortcuts for commenting out code in intelligent ways
 Plugin 'scrooloose/nerdcommenter'
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDAltDelims_java = 1
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+" python autocomplete
 Plugin 'Valloric/YouCompleteMe'
 let g:ycm_python_binary_path = '/usr/bin/python3'
-
+" bottom status bar (IDE-like)
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+let g:Powerline_symbols = 'fancy'
+" colors!!!
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'jnurmine/Zenburn'
+set t_8f=^[[38;2;%lu;%lu;%lum  " Needed in tmux
+set t_8b=^[[48;2;%lu;%lu;%lum  " Ditto
+" make vertical lines marking where indents are
+Plugin 'Yggdroot/indentLine'
+" more effective and faster code folding
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'Konfekt/FastFold'
+"
 "git interface
 "Plugin 'tpope/vim-fugitive'
 "filesystem
@@ -55,7 +76,6 @@ let g:ycm_python_binary_path = '/usr/bin/python3'
 "Plugin 'altercation/vim-colors-solarized'
 "Plugin 'jnurmine/Zenburn'
 "status bar
-"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 call vundle#end()
 
@@ -68,7 +88,6 @@ set clipboard=unnammed
 " enables filetype detection
 filetype plugin on
 filetype plugin indent on    
-let g:SimpylFold_docstring_preview = 1
 
 "autocomplete
 "let g:ycm_autoclose_preview_window_after_completion=1
@@ -76,7 +95,7 @@ let g:SimpylFold_docstring_preview = 1
 "custom keys
 let mapleader=" "
 "map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-"
+
 "call togglebg#map("<F5>")
 "colorscheme zenburn
 "set guifont=Monaco:h14
