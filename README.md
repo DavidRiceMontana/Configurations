@@ -38,7 +38,6 @@ Configurations for vim to share amongst machines
 - The <%> symbol means this file
     - :Git commit %
 ###### scrooloose/nerdtree - File tree and directory navigation
-###### jistr/vim-nerdtree-tabs - Nerdtree stays open and the same across tabs
 ###### ctrlpvim//ctrlp - Search for files
 - Enter <ctrl+p> to enter file search mode
 - Refresh cache with <F5>
@@ -65,16 +64,7 @@ Configurations for vim to share amongst machines
     - `aM` - Select a function or method. (Ex: vaM, daM, yaM, caM)
     - `iM` - Select inner function or method. (Ex: viM, diM, yiM, ciM)
 ###### Valloric/YouCompleteMe - Python autocomplete
-- Needs various development tools:
-    - `sudo apt-get install build-essential cmake`
-    - `sudo apt-get install python-dev python3-dev`
-    - `cd ~/.vim/bundle/YouCompleteMe` `./install.py --clang-completer`
-    - (see YouCompleteMe on GitHub for support for more languages)
 ###### python-rope/ropevim - Python refactoring
-- Needs the *Rope* library installed first:
-    - `sudo apt install python3-pip`
-    - `pip3 install -U pip setuptools`
-    - `sudo pip3 install Rope`
 ###### tmhedberg/SimpylFold - More accurate Python code folding
 ###### Lokaltog/powerline - Status bar that displays things like the current virtualenv, git branch, files being edited, and much more.
 ###### google/yapf - Auto-formatting for python to fit to PEP8 standards (not a vim plugin)
@@ -94,3 +84,5 @@ Configurations for vim to share amongst machines
 - `^a X` - Remove current region 
 - `^a Q` - Remove all regions but current
 - (screen is a large and useful application with a lot more commands. read up on to how to use it)
+##### nerdcommenter - Effective handling on commenting out code
+- 
