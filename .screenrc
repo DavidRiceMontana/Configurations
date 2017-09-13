@@ -8,7 +8,7 @@
 ## Created:        Sat 05 Aug 2006 06:38:47 PM EDT
 ##
 ## Settings used to initialize screen sessions
-#term screen-256color
+term linux 
 ## Change default escape sequence from C-a to a backslash
 ##  escape ``                            # default ^Aa
 

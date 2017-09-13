@@ -7,38 +7,75 @@ call vundle#begin()
 
 " --- Plugins --- "
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-syntastic/syntastic'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" utilize libraries including pylint, rope, pydoc, pyflakes, pep8, autopep8,
+" pep257 and mccabe for features like static analysis, refactoring, folding,
+" completion, documentation, and more.
+Plugin 'python-mode/python-mode'
+let g:pymode_python = 'python3'
+" shortcuts for commenting out code in intelligent ways
+Plugin 'scrooloose/nerdcommenter'
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDAltDelims_java = 1
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+" python autocomplete
+Plugin 'Valloric/YouCompleteMe'
+let g:ycm_python_binary_path = '/usr/bin/python3'
+" bottom status bar (IDE-like)
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+let g:Powerline_symbols = 'fancy'
+" colors!!!
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'jnurmine/Zenburn'
+set t_8f=^[[38;2;%lu;%lu;%lum  " Needed in tmux
+set t_8b=^[[48;2;%lu;%lu;%lum  " Ditto
+" make vertical lines marking where indents are
+Plugin 'Yggdroot/indentLine'
+" more effective and faster code folding
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'Konfekt/FastFold'
+"
 "git interface
-Plugin 'tpope/vim-fugitive'
-""filesystem
+"Plugin 'tpope/vim-fugitive'
+"filesystem
 "Plugin 'scrooloose/nerdtree'
 "autocmd VimEnter * NERDTree
 "file search
-Plugin 'ctrlpvim/ctrlp.vim'
-autocmd VimEnter * wincmd w
+"Plugin 'ctrlpvim/ctrlp.vim'
+"autocmd VimEnter * wincmd w
 "html
 "  isnowfy only compatible with python not python3
 "Plugin 'isnowfy/python-vim-instant-markdown'
 "python sytax checker
-Plugin 'nvie/vim-flake8'
+"Plugin 'nvie/vim-flake8'
 "flake8 - check PEP8 each write
-autocmd BufWritePost *.py call Flake8()
-Plugin 'vim-scripts/Pydiction'
-let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'scrooloose/syntastic'
+"autocmd BufWritePost *.py call Flake8()
+"Plugin 'vim-scripts/Pydiction'
+"let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'
+"Plugin 'vim-scripts/indentpython.vim'
+"Plugin 'scrooloose/syntastic'
 "auto-completion stuff
-Plugin 'python-mode/python-mode'
-let g:pymode_python = 'python3'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'python-rope/ropevim'
+"Plugin 'python-mode/python-mode'
+"let g:pymode_python = 'python3'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'python-rope/ropevim'
 "Plugin 'davidhalter/jedi-vim'
 "code folding
-Plugin 'tmhedberg/SimpylFold'
+"Plugin 'tmhedberg/SimpylFold'
 "colors!!!
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'jnurmine/Zenburn'
+"Plugin 'altercation/vim-colors-solarized'
+"Plugin 'jnurmine/Zenburn'
 "status bar
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 call vundle#end()
 
@@ -51,20 +88,19 @@ set clipboard=unnammed
 " enables filetype detection
 filetype plugin on
 filetype plugin indent on    
-let g:SimpylFold_docstring_preview = 1
 
 "autocomplete
-let g:ycm_autoclose_preview_window_after_completion=1
+"let g:ycm_autoclose_preview_window_after_completion=1
 
 "custom keys
 let mapleader=" "
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-"
-call togglebg#map("<F5>")
+"map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+"call togglebg#map("<F5>")
 "colorscheme zenburn
 "set guifont=Monaco:h14
 
-let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+"let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 "I don't like swap files
 set noswapfile
