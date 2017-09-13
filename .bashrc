@@ -129,4 +129,4 @@ if [ -x /usr/bin/mint-fortune ]; then
 fi
 
 # have bash execute the screen application on start
-[[ $TERM != "screen" ]] && exec screen -q 
+#[[ $TERM != "screen" ]] && exec screen -q 

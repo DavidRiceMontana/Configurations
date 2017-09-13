@@ -8,12 +8,12 @@
 
 source ~/.screenrc
 
-screen -t dev 0
+screen -t dev1 0
 split
-resize 45
-focus down
-screen -t test
 split -v
 focus right
+screen -t dev2
+focus down
 screen -t console
+resize 15
 focus up
