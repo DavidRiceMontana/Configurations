@@ -27,7 +27,7 @@ Configurations for vim to share amongst machines
     - Needs flake8 instealled through python
         - `sudo pip3 install flake8`
 9. google/yapf
-    - `sudo pip3 install yapf
+    - `sudo pip3 install yapf`
        
 ### Installed Plugin Sparknotes (Description and common commands)
 ###### VundleVim/Vundle - Pip for Vim. Makes installing packages easy
