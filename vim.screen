@@ -10,9 +10,9 @@ source ~/.screenrc
 
 screen -t dev1 0
 split
-split -v
-focus right
-screen -t dev2
+#split -v
+#focus right
+#screen -t dev2
 focus down
 screen -t console
 resize 15
