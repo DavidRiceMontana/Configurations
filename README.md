@@ -1,6 +1,7 @@
-# vim-config
-Configurations for vim to share amongst machines
+# Configurations
 
+## Vim
+Configurations for vim to share amongst machines
 ### Additional Dependencies
 1. vim installed with Python3 support: vim-nox
 2. Vundle extension manager to make installing the other plugins easy
@@ -28,7 +29,7 @@ Configurations for vim to share amongst machines
         - `sudo pip3 install flake8`
 9. google/yapf
     - `sudo pip3 install yapf`
-       
+    
 ### Installed Plugin Sparknotes (Description and common commands)
 ###### VundleVim/Vundle - Pip for Vim. Makes installing packages easy
 - :PluginInstall
@@ -64,25 +65,26 @@ Configurations for vim to share amongst machines
     - `aM` - Select a function or method. (Ex: vaM, daM, yaM, caM)
     - `iM` - Select inner function or method. (Ex: viM, diM, yiM, ciM)
 ###### Valloric/YouCompleteMe - Python autocomplete
-###### python-rope/ropevim - Python refactoring
+- (TODO: there are commands and shortcuts for jumping to definitions/declarations and quick refactoring. Read documentation and make shortcuts for these eventually)
+###### ~~python-rope/ropevim - Python refactoring~~
 ###### tmhedberg/SimpylFold - More accurate Python code folding
+- `zc` - close a fold
+- `zo` - open a fold
 ###### Lokaltog/powerline - Status bar that displays things like the current virtualenv, git branch, files being edited, and much more.
 ###### google/yapf - Auto-formatting for python to fit to PEP8 standards (not a vim plugin)
 - Run from outside of vim with `yapf -i <filename.py>`
-###### Screen (not a vim plugin) - Split or window multiple shells using tmux
-- `screen -S <name>` - New screen session with provided session name
-- `screen -ls` - List running sessions and names
-- `screen -x` - Attach to running session
-- `screen -r <name>` - Attach to session name
-- `screen -dRR` - Smart attach (Attaches to a screen session. If the session is attached elsewhere, detaches that other display. If no session exists, creates one. If multiple sessions exist, uses the first one.)
-- `^a S`\`^a V` - Split display horizontally\vertically
-    - Then enter `^a c` to start a new screen instance with shell open
-- `^a :resize <a number between 1 (one line of visibility) to 60 (60 lines of visibility)>` - Resize the screen, very useful for customizing split layouts
-    - `^a :resize -h -10` - Resize horizontally 10 lines less in size
-    - `^a :resize -v 50%` - Resize vertically 50% less in size
-- `^a tab` - Jump to next display region
-- `^a X` - Remove current region 
-- `^a Q` - Remove all regions but current
-- (screen is a large and useful application with a lot more commands. read up on to how to use it)
 ##### nerdcommenter - Effective handling on commenting out code
-- 
+###### Screen (not a vim plugin) - Split or window multiple shells using tmux
+- `^a c` - create a new shell
+- `^a [0-9]` - go to window [0-9]
+- `^a S [optional file path to open]` - Make new screen window split horizontally 
+- `^a V (or |) [optional file path to open]` - Make new screen window split vertically 
+- `^a^l` - redraw window (good for fixing bugs?)
+- `^a X` - remove current screen window
+- `^a k` - kill the current shell
+- `^a d` - Detach, leave everything as is, but return to terminal
+- `^a D D` - Detach and logout (quick exit)
+- `screen -r` - Return to detached screen window
+- `screen -dRR` - Attach non screen state to current screen session
+- (screen is a large and useful application with a lot more commands. read up on to how to use it)
+
