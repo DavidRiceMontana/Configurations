@@ -68,6 +68,9 @@ Configurations for vim to share amongst machines
 - (TODO: there are commands and shortcuts for jumping to definitions/declarations and quick refactoring. Read documentation and make shortcuts for these eventually)
 ###### ~~python-rope/ropevim - Python refactoring~~
 ###### tmhedberg/SimpylFold - More accurate Python code folding
+- `spacebar` to fold code based on indents  
+- `zR` - Unfold all folds
+- `zM` - Fold all folds
 - `zc` - close a fold
 - `zo` - open a fold
 ###### Lokaltog/powerline - Status bar that displays things like the current virtualenv, git branch, files being edited, and much more.
