@@ -26,11 +26,12 @@ shell -$SHELL
 bind s split
 bind j focus down
 bind k focus up
-
 # Make resizing regions easier
 bind = resize =
 bind + resize +1
 bind - resize -1
+# Disable freeze shortcut
+bind s
 
 # Configure status bar at the bottom of the terminal
 hardstatus alwayslastline

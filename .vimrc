@@ -34,6 +34,9 @@ let g:ycm_python_binary_path = '/usr/bin/python3'
 " bottom status bar (IDE-like)
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 let g:Powerline_symbols = 'fancy'
+" IDE-like class/file structure display and navigation
+Plugin 'majutsushi/tagbar'
+nmap <F8> :TagbarToggle<CR>
 " colors!!!
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jnurmine/Zenburn'
