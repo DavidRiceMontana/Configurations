@@ -77,6 +77,8 @@ Configurations for vim to share amongst machines
 ###### google/yapf - Auto-formatting for python to fit to PEP8 standards (not a vim plugin)
 - Run from outside of vim with `yapf -i <filename.py>`
 ##### nerdcommenter - Effective handling on commenting out code
+##### majutsushi/tagbar - Display tags in a window, ordered by scope
+- `<F8>` - Open tagbar
 ###### Screen (not a vim plugin) - Split or window multiple shells using tmux
 - `^a c` - create a new shell
 - `^a [0-9]` - go to window [0-9]
