@@ -29,6 +29,9 @@ Configurations for vim to share amongst machines
         - `sudo pip3 install flake8`
 9. google/yapf
     - `sudo pip3 install yapf`
+10. majutsushi/tagbar
+    - Needs Exuberant Ctags installed alongside it:
+        - `sudo apt install exuberant-ctags`
     
 ### Installed Plugin Sparknotes (Description and common commands)
 ###### VundleVim/Vundle - Pip for Vim. Makes installing packages easy
