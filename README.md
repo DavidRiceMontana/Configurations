@@ -100,6 +100,7 @@ Configurations for vim to share amongst machines
 This is a PowershellScript that fully removes unwanted programs.  Before running, ensure:
 - Powershell is run in administrator mode
 - Powershell is allowed to run unsigned scripts. Set with `set-executionpolicy remotesigned`
+
 To run,
 - Navigate to the directory where the script lives
 - Execute the script with `.\remove_bloatware.ps1 (enter)`
