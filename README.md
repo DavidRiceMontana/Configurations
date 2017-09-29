@@ -1,5 +1,4 @@
-# Configurations
-
+# Linux
 ## Vim
 Configurations for vim to share amongst machines
 ### Additional Dependencies
@@ -96,3 +95,11 @@ Configurations for vim to share amongst machines
 - `screen -dRR` - Attach non screen state to current screen session
 - (screen is a large and useful application with a lot more commands. read up on to how to use it)
 
+# Windows
+### Remove Bloatware
+This is a PowershellScript that fully removes unwanted programs.  Before running, ensure:
+- Powershell is run in administrator mode
+- Powershell is allowed to run unsigned scripts. Set with `set-executionpolicy remotesigned`
+To run,
+- Navigate to the directory where the script lives
+- Execute the script with `.\remove_bloatware.ps1 (enter)`
